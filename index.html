@@ -1,0 +1,590 @@
+<html>
+<head>
+<title>BCA Online</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="icon" href="picturs/logo1.png">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+ <style>
+ .navbar {
+              display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #a8a4a4;
+            padding: 5px 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+ .navbar img {
+            height: 50px;
+        }
+        .h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color:rgb(0, 0, 0);
+        }
+        h2 {
+    text-align: center;
+}
+        p {
+            font-size: 1.7rem;
+            line-height: 1.5;
+           
+            margin: 0 auto 20px auto;
+            color:rgb(29, 28, 28);
+            margin: 0;
+          padding: 0;
+           width: 100%;
+        }
+       .body {
+            font-family: Arial, sans-serif;
+        }
+        .image-container img {
+
+            height: 150px; 
+            object-fit: contain; 
+            width: 90%;
+            margin: auto;
+            
+        }
+    
+      
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+    
+        .logo {
+          width: 100px;
+        }
+        
+        .card {
+            width: 200px;
+            text-align: center;
+        }
+        .full-height {
+            height: 100vh;
+            object-fit: cover;
+        }
+        .img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .card {
+            width: 400px;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .card1{
+          width: 100%;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .card2 {
+            width: 400px;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .grid1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .card3 {
+            width: 300px;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .grid2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+.card3 img{
+  width: 200px;
+  padding-top: 5%;
+}
+ 
+.recruiters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        
+        .card4 {
+            width: 250px; 
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            background: white;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+       
+        .card4 img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .grid3{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .btn-open-form {
+            background: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .btn-open-form:hover {
+            background: darkred;
+        }
+
+        .modal-content {
+            border-radius: 10px;
+        }
+
+        .form-heading {
+            background: black;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .form-control {
+            margin-top: 10px;
+            height: 45px;
+        }
+
+        .btn-enquire {
+            width: 100%;
+            background: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .btn-enquire:hover {
+            background: darkred;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: red;
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        footer {
+    background-color: rgb(53, 51, 51);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+  
+        
+</style>
+</head>
+<body style="background-color:#eeeeeeef  ">
+  <header>
+ 
+  
+    <div class="navbar">
+    <img src="picturs/logo.jpg" alt="BCA Online Logo">
+   </div>
+    
+  </header>
+  <h1  text align="center">Welcome To BCA Online</h1>
+  <p text align="center" > <b>Explore Learning Like Never Before </b></p>
+
+<main>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+<div class="carousel-inner">
+<div class="item active">
+  <img src="picturs/pic5.jpg" alt="Parul University1" >
+</div>
+
+<div class="item">
+  <img src="picturs/pic6.jpg" alt="Parul University2" >
+</div>
+
+<div class="item">
+  <img src="picturs/pic8.jpg" alt="Parul University3" >
+</div>
+</div>
+
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+  <span class="sr-only">previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+
+<br>
+<div class="text-center">
+  <h1> 𝐎𝐧𝐥𝐢𝐧𝐞 𝐁𝐂𝐀 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 </h1> 
+  <p>The Online Bachelor of Computer Applications (BCA) program at Parul University is tailored to equip students with in- depth knowledge and practical skills in computer science, programming, software development, and IT management.</p>
+<p>The curriculum of BCA online covers key areas such as programming languages, database management, web development, data structures, computer networks, and software engineering, ensuring students are prepared for the rapidly evolving tech landscape. The BCA Online degree is designed to cater to both beginners and those with some prior
+IT knowledge, providing personalized mentorship and career support throughout the course.</p>
+<div class="image-container">
+   <div class="title"><b><h2>Why Chosse Parul University</b></h2></div>
+    <div class="grid">
+
+      <div class="card">
+    <h3>Credibilty</h3>
+  <img src="picturs/C1.jpg" alt="Credibilty img">
+  <p><b>𝙽𝙰𝙲𝙲 𝙶𝚛𝚊𝚍𝚎 𝙰++ 𝙰𝚌𝚌𝚛𝚎𝚍𝚒𝚝𝚎𝚍</b> </p>
+</div>
+<div class="card">
+  <h3>Affordability</h3>
+  <img src="picturs/C2.jpg" alt="Affordability img">
+  <p><b> 𝙴𝚊𝚜𝚢 𝙸𝚗𝚜𝚝𝚊𝚕𝚖𝚎𝚗𝚝𝚜 & 𝙿𝚊𝚢𝚖𝚎𝚗𝚝 𝙾𝚙𝚝𝚒𝚘𝚗𝚜 </b></p>     
+</div>
+
+<div class="card">
+  <h3>Exposure </h3>
+  <img src="picturs/C6.jpg" alt="Exposure img">
+  <p><b>700+ 𝙸𝚗𝚍𝚞𝚜𝚝𝚛𝚢 𝙲𝚘𝚕𝚕𝚊𝚋𝚘𝚛𝚊𝚝𝚒𝚘𝚗𝚜</b></p> 
+</div>
+
+<div class="card">
+  <h3>Mentorship</h3>
+  <img src="picturs/C4.jpg" alt="Mentorship img">
+  <p><b>𝚃𝚘𝚙 𝚀𝚞𝚊𝚕𝚒𝚏𝚒𝚎𝚍 𝙼𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝙿𝚛𝚘𝚏𝚎𝚜𝚜𝚘𝚛𝚜 𝙵𝚛𝚘𝚖 𝙻𝚎𝚊𝚍𝚒𝚗𝚐 𝙸𝚗𝚜𝚝𝚒𝚝𝚞𝚝𝚎𝚜 </b></p>     
+</div>
+
+<div class="card">
+  <h3>100% Placement Assistance </h3>
+  <img src="picturs/C5.png" alt="Placement Assistance">
+  <p><b>𝙲𝚊𝚛𝚎𝚎𝚛 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 & 𝙲𝚘𝚖𝚙𝚎𝚝𝚎𝚗𝚌𝚎 𝙱𝚞𝚒𝚕𝚍𝚒𝚗𝚐 </b></p>   
+</div>
+
+
+<div class="card">
+  <h3>100% Online Learning </h3>
+  <img src="picturs/C3.jpg" alt="100% Online Learning img">
+  <p><b> 𝙻𝚎𝚌𝚝𝚞𝚛𝚎𝚜, 𝚅𝚒𝚟𝚊 & 𝙴𝚡𝚊𝚖𝚜 𝚒𝚗 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐 𝙼𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚂𝚢𝚜𝚝𝚎𝚖 </b></p>     
+</div>
+<div class="card">
+  <h3>Entrepreneurship </h3>
+  <img src="picturs/C7.png" alt="Entrepreneurship img">
+  <p><b>𝚂𝚎𝚜𝚜𝚒𝚘𝚗𝚜 𝚆𝚒𝚝𝚑 𝙴𝚗𝚝𝚛𝚎𝚙𝚛𝚎𝚗𝚎𝚞𝚛𝚜</b></p> 
+  </div>
+</div>
+</div>
+<br>
+<div >
+<p>Parul University's Online Programs provide an enriching learning experience with in-demand skill training through a curriculum designed by leading industry experts. The programs are fully digital and taught through a comprehensive learning management platform that provides a pool of digital resources and guidance from our experts.
+  Experience excellence with Parul University's leading online programs.</p><br>
+  
+<img src="picturs/pic4.jpg" alt="Parul University img"></div>
+<br>
+<h1><b>Certificate Course</b></h1>
+<p>Parul University offers a wide range of online certificate programs designed to help students and professionals enhance their skills in various fields.
+  These certificate courses provide flexible learning opportunities, allowing learners to study at their own pace while gaining industry-relevant knowledge.
+  Parul University’s online programs cover areas such as management, technology, healthcare, and more, ensuring career growth and professional development.
+  The university collaborates with industry experts to deliver high-quality content, practical insights, and hands-on learning experiences.
+  With globally recognized certifications, Parul University’s online courses help learners boost their resumes and stay competitive in their respective industries.</p>
+<h2><b>Previous Certificate Course</b></h2>
+<h2>AI FOR ALL: BRIDGING TECHNOLOGY WITH EVERY PROFESSION</h2>
+
+<img src="picturs/ai.jpg" alt="Ai For All Image">
+</div><br>
+<div class="grid1">
+<div class="card2">
+<h3><b>PROGRAM HIGHLIGHTS</b></h3>
+<p>"Al for All Bridging Technology with Every Profession" is designed to help professionals master Al tools applicable across industries like healthcare, finance, retail, and more without the need for coding. As Al drives innovation and creates some of the highest-paying jobs in the tech sector, this course provides practical, hands-on experience using Al solutions tailored to your profession. The program is flexible, designed for working professionals, and aims to future-proof your career in today's rapidly evolving Al landscape. 
+ <br> ■Learn to apply Al tools without coding.<br> 
+  ■Gain hands-on experience in real-world industry applications. <br>
+  ■Unlock high-paying opportunities in Al-driven fields. </p>
+</div>
+<div class="grid1">
+<div class="card2">
+<h3><b>JOB OPPORTUNITIES</b></h3>
+<p>
+  1.Al Specialist: Develop and implement Al-driven solutions to solve industry-specific problems. <br>
+  2.Data Analyst: Use Al tools to analyze data and generate actionable insights. <br>
+  3.Al Consultant: Advise businesses on integrating Al technologies to enhance operations and strategies.<br> 
+  4.Digital Transformation Manager: Lead initiatives to integrate Al and other technologies into business processes. <br>
+  5.Content Creator: Utilize Al tools for innovative content creation and optimization. <br>
+  6.Product Manager: Oversee the development and implementation of Al-powered products and services. <br>
+  7.Business Intelligence Analyst: Leverage Al for advanced data analysis and business forecasting</p>
+  </div>
+</div>
+</div>
+
+
+<h2><b>Activity</b></h2>
+<div class="grid2">
+  <div class="card3">
+<h2>1.Techno Quiz Competition</h2>
+<img src="picturs/TQ.jpg" alt="Techno Quiz Competition img"><br>
+<br><p>1.Participate in our exciting online quiz competition and test your knowledge from the comfort of your home!<br>
+  2.Join the ultimate online quiz battle and challenge your mind against the best!<br>
+  3.Stay home, stay smart! Participate in our engaging online quiz and become a champion!</p>
+  </div>
+  <div class="card3">
+    <h2>2.Teacher's Day Celebration</h2>
+    <img src="picturs/td.jpg" alt="Teacher's Day Celebration img"><br>
+    <br><p>1.The virtual Teachers' Day celebration at Parul University was a true tribute to the teachers who motivate and mentor us on a daily basis.<br>
+      2.In a unique virtual meeting, we paid tribute to the effective roles of our teachers, making this Teachers' Day a highly meaningful celebration at Parul University.<br>
+      3.The celebration of Teachers' Day at Parul University was a live virtual event, where we paid tribute to the consistent dedication and effectiveness of our teachers.</p>
+    </div>
+<div class="card3">
+  <h2>3.Expert Talk</h2>
+  <img src="picturs/et.jpg" alt="Expert Talk img"><br>
+  <br><p>1.Parul University regularly hosts Expert Talks, where industry leaders and thought experts share their insights and knowledge with our students.<br>
+    2.Our Expert Talk sessions at Parul University offer students the opportunity to learn from the best in the field and expand their understanding beyond the classroom.<br>
+  3.At Parul University, Expert Talks are a platform for connecting students with industry experts who inspire and guide them towards a successful future.</p>
+</div>
+</div>
+<div class="text-center">
+<h2><b>BCA Subject</b></h2>
+<a href="Parul University Subject List  - Online BCA .pdf" class="btn btn-info btn-lg" target="_blank">
+  <span class="glyphicon glyphicon-book"></span>
+</a>
+</div> 
+<br>
+<div style="text-align: center;">
+  <img src="picturs/price.jpg" alt="price img">
+</div> 
+
+
+ <h2><b>Our Top Recruiters</b></h2>
+ <div class="grid3">
+ <div class="recruiters">
+  <div class="card4"><img src="picturs/relance.jpg" alt="Relance"></div>
+  <div class="card4"><img src="picturs/byjus.jpg" alt="Byjus"></div>
+  <div class="card4"><img src="picturs/tata.jpg" alt="Tata"></div>
+  <div class="card4"><img src="picturs/abb.jpg" alt="Abb"></div>
+  <div class="card4"><img src="picturs/extratalk.jpg" alt="ExtraTalk"></div>
+  <div class="card4"><img src="picturs/ev.jpg" alt="Ev"></div>
+  <div class="card4"><img src="picturs/vodafon.jpg" alt="Vodafone"></div>
+  <div class="card4"><img src="picturs/lt.jpg" alt="LT"></div>
+  <div class="card4"><img src="picturs/amazon.jpg" alt="Amazon"></div>
+</div>
+</div>
+  
+<div class="text-center" style="margin-Top: 20px;">
+  <button class="btn btn-open-form" data-toggle="modal" data-target="#enquiryModal">Enquire Now</button>
+  <a href="https://api.whatsapp.com/send?phone=+916358928664&text=I%20want%20to%20know%20more%20about%20Online%20BCA">
+    <img src="picturs/whatsapp.png" alt="Whatsapp Icon" height="75"
+    width="75"  >
+    </img></a>
+</div>
+
+
+<div id="enquiryModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+      
+      <div class="modal-content">
+          <div class="form-heading">Enquire Now</div>
+          <div class="modal-body">
+              <form>
+                  <label class="form-label">Enter Your Full Name</label>
+                  <input type="text" class="form-control" placeholder="Name" required>
+
+                  <input type="email" class="form-control" placeholder="Email" required>
+                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+
+                  <select class="form-control">
+                      <option>Select State</option>
+                  
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                  </select>
+
+                  <select class="form-control">
+                    <option value="">Select City</option>
+                    <optgroup label="Andhra Pradesh">
+                      <option value="Visakhapatnam">Visakhapatnam</option>
+                      <option value="Vijayawada">Vijayawada</option>
+                      <option value="Guntur">Guntur</option>
+                      <option value="Nellore">Nellore</option>
+                      <option value="Tirupati">Tirupati</option>
+                  </optgroup>
+          
+                 
+                  <optgroup label="Bihar">
+                      <option value="Patna">Patna</option>
+                      <option value="Gaya">Gaya</option>
+                      <option value="Bhagalpur">Bhagalpur</option>
+                      <option value="Muzaffarpur">Muzaffarpur</option>
+                  </optgroup>
+          
+                  
+                  <optgroup label="Gujarat">
+                      <option value="Ahmedabad">Ahmedabad</option>
+                      <option value="Surat">Surat</option>
+                      <option value="Vadodara">Vadodara</option>
+                      <option value="Rajkot">Rajkot</option>
+                  </optgroup>
+          
+               
+                  <optgroup label="Karnataka">
+                      <option value="Bengaluru">Bengaluru</option>
+                      <option value="Mysuru">Mysuru</option>
+                      <option value="Mangalore">Mangalore</option>
+                      <option value="Hubli">Hubli</option>
+                  </optgroup>
+          
+                  
+                  <optgroup label="Maharashtra">
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Nagpur">Nagpur</option>
+                      <option value="Nashik">Nashik</option>
+                  </optgroup>
+          
+                 
+                  <optgroup label="Punjab">
+                      <option value="Ludhiana">Ludhiana</option>
+                      <option value="Amritsar">Amritsar</option>
+                      <option value="Jalandhar">Jalandhar</option>
+                      <option value="Patiala">Patiala</option>
+                  </optgroup>
+          
+                 
+                  <optgroup label="Rajasthan">
+                      <option value="Jaipur">Jaipur</option>
+                      <option value="Jodhpur">Jodhpur</option>
+                      <option value="Udaipur">Udaipur</option>
+                      <option value="Kota">Kota</option>
+                  </optgroup>
+          
+                  
+                  <optgroup label="Tamil Nadu">
+                      <option value="Chennai">Chennai</option>
+                      <option value="Coimbatore">Coimbatore</option>
+                      <option value="Madurai">Madurai</option>
+                      <option value="Tiruchirappalli">Tiruchirappalli</option>
+                  </optgroup>
+          
+                  
+                  <optgroup label="Uttar Pradesh">
+                      <option value="Lucknow">Lucknow</option>
+                      <option value="Kanpur">Kanpur</option>
+                      <option value="Varanasi">Varanasi</option>
+                      <option value="Agra">Agra</option>
+                  </optgroup>
+          
+               
+                  <optgroup label="West Bengal">
+                      <option value="Kolkata">Kolkata</option>
+                      <option value="Howrah">Howrah</option>
+                      <option value="Durgapur">Durgapur</option>
+                      <option value="Siliguri">Siliguri</option>
+                  </optgroup>
+          
+                  </select>
+                  
+
+                  <select class="form-control">
+                      <option>Select Specialization</option>
+                      <option>Online BCA</option>
+                      </select>
+                  <br>
+                  <button type="submit" class="btn btn-enquire">Enquire Now</button>
+              </form>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+<div style="text-align: center;">
+<a href="https://www.youtube.com/watch?v=CoK-vRyucMU" target="_blank">A Virtual Journey: Explore Parul University's Campus from Anywhere!</a>
+</div>
+</main>
+<footer>
+  <p>Copyright © 2024 | All rights reserved bca.paruluniversity.online</p>
+</footer>
+</div>
+</div>
+
+
+</body>
+</html>
